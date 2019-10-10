@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="968952b6-c89d-4dfd-91eb-2f382a12beef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nono.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/0002_tmall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/0003_auto_20191010_1624.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/0004_auto_20191010_1627.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/0005_auto_20191010_1629.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/0006_auto_20191010_1634.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/shop/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nono/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nono/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nono/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nono/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/nono.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopbop/tmall.bson" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopbop/tmall.metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmall.csv" afterDir="false" />
-    </list>
+    <list default="true" id="968952b6-c89d-4dfd-91eb-2f382a12beef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +24,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3037">
+              <caret line="124" column="6" lean-forward="true" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -183,6 +146,7 @@
         <option value="$PROJECT_DIR$/apps/shop/serializer.py" />
         <option value="$PROJECT_DIR$/apps/shop/urls.py" />
         <option value="$PROJECT_DIR$/apps/shop/views.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -444,7 +408,7 @@
       <workItem from="1570499973430" duration="10484000" />
       <workItem from="1570568002437" duration="7763000" />
       <workItem from="1570639668844" duration="114000" />
-      <workItem from="1570667474621" duration="11198000" />
+      <workItem from="1570667474621" duration="11449000" />
     </task>
     <servers />
   </component>
@@ -457,7 +421,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33464000" />
+    <option name="totallyTimeSpent" value="33715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="737" extended-state="0" />
@@ -770,7 +734,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3037">
+          <caret line="124" column="6" lean-forward="true" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
