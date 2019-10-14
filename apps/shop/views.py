@@ -37,8 +37,9 @@ class TmallViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     queryset = Tmall.objects.all()
     serializer_class = TmallSerializer
     pagination_class = TmallPagination
-    filter_backends = [DjangoFilterBackend, filters.SearchFilter]
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['keyword', 'describe', 'shop']
+    ordering_fields = ['goods_price']
 
 
 class ShopListView(View):
