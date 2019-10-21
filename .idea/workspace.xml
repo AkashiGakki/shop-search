@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="968952b6-c89d-4dfd-91eb-2f382a12beef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shop/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="238">
               <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -178,24 +177,23 @@
             <path>
               <item name="nono" type="b2602c69:ProjectViewProjectNode" />
               <item name="nono" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nono" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nono" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nono" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nono" type="462c0819:PsiDirectoryNode" />
               <item name="nono" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="nono" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Source/Files/Project/Python_Django/nono" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.debug">
+  <component name="RunManager" selected="Django server.nono">
     <configuration name="Test: apps" type="DjangoTestsConfigurationType" temporary="true">
       <module name="nono" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -415,7 +413,10 @@
       <workItem from="1570568002437" duration="7763000" />
       <workItem from="1570639668844" duration="114000" />
       <workItem from="1570667474621" duration="12397000" />
-      <workItem from="1570761599782" duration="236000" />
+      <workItem from="1570761599782" duration="260000" />
+      <workItem from="1571294871474" duration="503000" />
+      <workItem from="1571363572663" duration="314000" />
+      <workItem from="1571426546543" duration="52000" />
     </task>
     <servers />
   </component>
@@ -428,13 +429,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34899000" />
+    <option name="totallyTimeSpent" value="35792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="737" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27011493" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2816092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -664,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="238">
           <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
