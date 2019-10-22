@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="968952b6-c89d-4dfd-91eb-2f382a12beef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shop/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shop/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods_jd.json" beforeDir="false" afterPath="$PROJECT_DIR$/goods_jd.json" afterDir="false" />
-    </list>
+    <list default="true" id="968952b6-c89d-4dfd-91eb-2f382a12beef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,7 +417,7 @@
       <workItem from="1571294871474" duration="503000" />
       <workItem from="1571363572663" duration="314000" />
       <workItem from="1571426546543" duration="7693000" />
-      <workItem from="1571710664063" duration="931000" />
+      <workItem from="1571710664063" duration="1123000" />
     </task>
     <servers />
   </component>
@@ -437,7 +430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44364000" />
+    <option name="totallyTimeSpent" value="44556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="737" extended-state="0" />
