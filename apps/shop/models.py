@@ -38,3 +38,45 @@ class Test(mongoengine.Document):
     email = mongoengine.StringField()
 
     meta = {'collection': 'test'}
+
+
+class You(models.Model):
+    id = models.AutoField(primary_key=True)
+    category = models.CharField(max_length=100)
+    keyword = models.CharField(max_length=100)
+    goods = models.CharField(max_length=200)
+    goods_url = models.URLField()
+    image_url = models.URLField()
+    price = models.FloatField()
+    describe = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.goods
+
+
+class Vip(models.Model):
+    id = models.AutoField(primary_key=True)
+    item = models.CharField(max_length=20)
+    category = models.CharField(max_length=20)
+    keyword = models.CharField(max_length=20)
+    goods = models.CharField(max_length=200)
+    goods_url = models.URLField()
+    image_url = models.URLField()
+    price = models.FloatField()
+    describe = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.goods
+
+
+class Jd(models.Model):
+    id = models.AutoField(primary_key=True)
+    item = models.CharField(max_length=20)
+    category = models.CharField(max_length=20)
+    keyword = models.CharField(max_length=20)
+    goods = models.TextField()
+    goods_url = models.TextField()
+    image_url = models.TextField()
+    price = models.FloatField()
+    shop = models.CharField(default='', max_length=50)
+    shop_url = models.TextField(default='', max_length=200)

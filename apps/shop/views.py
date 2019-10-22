@@ -9,8 +9,8 @@ from rest_framework import viewsets, mixins, filters
 from rest_framework.generics import ListAPIView
 from rest_framework.pagination import PageNumberPagination
 
-from apps.shop.models import Shop, Tmall
-from apps.shop.serializer import ShopSerializer, TmallSerializer
+from apps.shop.models import Shop, Tmall, You, Vip, Jd
+from apps.shop.serializer import ShopSerializer, TmallSerializer, YouSerializer, VipSerializer, JdSerializer
 
 
 class ShopPagination(PageNumberPagination):
@@ -21,6 +21,27 @@ class ShopPagination(PageNumberPagination):
 
 
 class TmallPagination(PageNumberPagination):
+    page_size = 10
+    page_size_query_description = 'page_size'
+    page_query_param = 'p'
+    max_page_size = 100
+
+
+class YouPagination(PageNumberPagination):
+    page_size = 10
+    page_size_query_description = 'page_size'
+    page_query_param = 'p'
+    max_page_size = 100
+
+
+class VipPagination(PageNumberPagination):
+    page_size = 10
+    page_size_query_description = 'page_size'
+    page_query_param = 'p'
+    max_page_size = 100
+
+
+class JdPagination(PageNumberPagination):
     page_size = 10
     page_size_query_description = 'page_size'
     page_query_param = 'p'
@@ -40,6 +61,33 @@ class TmallViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['keyword', 'describe', 'shop']
     ordering_fields = ['goods_price']
+
+
+class YouViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    queryset = You.objects.all()
+    serializer_class = YouSerializer
+    pagination_class = YouPagination
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['goods', 'keyword', 'category']
+    ordering_fields = ['price']
+
+
+class VipViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    queryset = Vip.objects.all()
+    serializer_class = VipSerializer
+    pagination_class = VipPagination
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['goods', 'item', 'keyword', 'category']
+    ordering_fields = ['price']
+
+
+class JdViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    queryset = Jd.objects.all()
+    serializer_class = JdSerializer
+    pagination_class = JdPagination
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['goods', 'item', 'keyword', 'category']
+    ordering_fields = ['price']
 
 
 class ShopListView(View):
