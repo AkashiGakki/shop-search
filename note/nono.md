@@ -554,4 +554,94 @@ class TmallViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
 当然，需要设置字段 `sold_num` 和 `add_time`
 
 
+#### 部署
+
+远程服务器虚拟环境安装
+
+部署到生产环境：
+
+```python 
+pipenv install --ignore-pipfile
+```
+
+##### 数据
+
+```python
+source /data/shopbop.sql
+```
+
+### 最新更新
+
+#### 修改 `settings.py`
+
+```py
+DEBUG = False
+
+ALLOWED_HOSTS = ['*']
+```
+
+#### 缩小搜索范围，精确搜索
+
+修改 `apps/shop/views.py` 下 `search_fields` 字段
+
+#### 添加数据库 `pymasql`
+
+```py
+import pymysql
+pymysql.install_as_MySQLdb()
+```
+
+#### CROS 跨域访问设置
+
+```shell
+pip install django-cors-headers
+```
+
+修改 `settings.py`:
+
+```py
+INSTALLED_APPS = [
+  'django.contrib.admin',
+  ·····
+  'corsheaders',
+  ····
+]
+
+MIDDLEWARE = [
+  ······
+  'corsheaders.middleware.CorsMiddleware',  # 按顺序
+  'django.middleware.common.CommonMiddleware', #按顺序
+  'django.middleware.csrf.CsrfViewMiddleware',  #按顺序
+]
+
+#  新增以下配置  #
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+# Origin '*' in CORS_ORIGIN_WHITELIST is missing scheme 出现该错误则将其注释掉
+# CORS_ORIGIN_WHITELIST = (
+#  "*"
+# )
+CORS_ALLOW_METHODS = (
+  'DELETE',
+  'GET',
+  'OPTIONS',
+  'PATCH',
+  'POST',
+  'PUT',
+  'VIEW',
+)
+CORS_ALLOW_HEADERS = (
+  'XMLHttpRequest',
+  'X_FILENAME',
+  'accept-encoding',
+  'authorization',
+  'content-type',
+  'dnt',
+  'origin',
+  'user-agent',
+  'x-csrftoken',
+  'x-requested-with',
+  'Pragma',
+)
+```
 
