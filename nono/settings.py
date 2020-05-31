@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2e1o3ns29(@j289w$$4gus^gptq6pqotq5chn@eapjnyl@1e7u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.shop',
     'apps.users',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -50,7 +51,40 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # 按顺序
+    'django.middleware.common.CommonMiddleware', #按顺序
+    'django.middleware.csrf.CsrfViewMiddleware',  #按顺序
 ]
+
+#  新增以下配置  #
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+# Origin '*' in CORS_ORIGIN_WHITELIST is missing scheme 出现该错误则将其注释掉
+# CORS_ORIGIN_WHITELIST = (
+#  "*"
+# )
+CORS_ALLOW_METHODS = (
+  'DELETE',
+  'GET',
+  'OPTIONS',
+  'PATCH',
+  'POST',
+  'PUT',
+  'VIEW',
+)
+CORS_ALLOW_HEADERS = (
+  'XMLHttpRequest',
+  'X_FILENAME',
+  'accept-encoding',
+  'authorization',
+  'content-type',
+  'dnt',
+  'origin',
+  'user-agent',
+  'x-csrftoken',
+  'x-requested-with',
+  'Pragma',
+)
 
 ROOT_URLCONF = 'nono.urls'
 
