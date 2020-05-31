@@ -68,7 +68,7 @@ class YouViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = YouSerializer
     pagination_class = YouPagination
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    search_fields = ['goods', 'keyword', 'category']
+    search_fields = ['keyword', 'category']
     ordering_fields = ['price']
 
 
@@ -77,7 +77,7 @@ class VipViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = VipSerializer
     pagination_class = VipPagination
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    search_fields = ['goods', 'item', 'keyword', 'category']
+    search_fields = ['item', 'keyword', 'category']
     ordering_fields = ['price']
 
 
@@ -86,7 +86,7 @@ class JdViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = JdSerializer
     pagination_class = JdPagination
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    search_fields = ['goods', 'item', 'keyword', 'category']
+    search_fields = ['item', 'keyword', 'category']
     ordering_fields = ['price']
 
 
