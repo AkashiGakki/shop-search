@@ -14,35 +14,35 @@ from apps.shop.serializer import ShopSerializer, TmallSerializer, YouSerializer,
 
 
 class ShopPagination(PageNumberPagination):
-    page_size = 32
+    page_size = 20
     page_size_query_description = 'page_size'
     page_query_param = 'p'
     max_page_size = 100
 
 
 class TmallPagination(PageNumberPagination):
-    page_size = 32
+    page_size = 20
     page_size_query_description = 'page_size'
     page_query_param = 'p'
     max_page_size = 100
 
 
 class YouPagination(PageNumberPagination):
-    page_size = 32
+    page_size = 20
     page_size_query_description = 'page_size'
     page_query_param = 'p'
     max_page_size = 100
 
 
 class VipPagination(PageNumberPagination):
-    page_size = 32
+    page_size = 20
     page_size_query_description = 'page_size'
     page_query_param = 'p'
     max_page_size = 100
 
 
 class JdPagination(PageNumberPagination):
-    page_size = 32
+    page_size = 20
     page_size_query_description = 'page_size'
     page_query_param = 'p'
     max_page_size = 100
